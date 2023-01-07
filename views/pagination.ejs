@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+  <table>
+<% for(var i=0; i < result.length; i++) { %>
+   <tr>
+     <td>Id :<%- JSON.stringify(result[i].dataValues.id) %></td>
+     <td>Name :<%- JSON.stringify(result[i].dataValues.name) %></td>
+     <td>Address :<%- JSON.stringify(result[i].dataValues.address) %></td>
+     <td>Contact No :<%- JSON.stringify(result[i].dataValues.phone) %></td>
+</tr>
+
+<% } %>
+</table>
+  </body>
+</html>

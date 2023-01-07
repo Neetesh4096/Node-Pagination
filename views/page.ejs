@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title><%= pageTitle %></title>
+  </head>
+  <body>
+    <h2><%= data %></h2>
+    <form
+      action="/create"
+      method="post"
+      enctype="application/x-www-form-urlencoded"
+    >
+      Name:<input type="text" name="name" /> Address:<input
+        type="text"
+        name="address"
+      />
+      Phone:<input type="number" name="phone" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
